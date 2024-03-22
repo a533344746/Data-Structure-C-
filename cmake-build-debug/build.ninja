@@ -49,11 +49,17 @@ cmake_ninja_workdir = D$:/code/CPPStudy/cmake-build-debug/
 
 build cmake_object_order_depends_target_CPPStudy: phony || CMakeFiles/CPPStudy.dir
 
-build CMakeFiles/CPPStudy.dir/part1/main.cpp.obj: CXX_COMPILER__CPPStudy_unscanned_Debug D$:/code/CPPStudy/part1/main.cpp || cmake_object_order_depends_target_CPPStudy
-  DEP_FILE = CMakeFiles\CPPStudy.dir\part1\main.cpp.obj.d
+build CMakeFiles/CPPStudy.dir/part1/SqList.cpp.obj: CXX_COMPILER__CPPStudy_unscanned_Debug D$:/code/CPPStudy/part1/SqList.cpp || cmake_object_order_depends_target_CPPStudy
+  DEP_FILE = CMakeFiles\CPPStudy.dir\part1\SqList.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\CPPStudy.dir
   OBJECT_FILE_DIR = CMakeFiles\CPPStudy.dir\part1
+
+build CMakeFiles/CPPStudy.dir/part2/LinkList.cpp.obj: CXX_COMPILER__CPPStudy_unscanned_Debug D$:/code/CPPStudy/part2/LinkList.cpp || cmake_object_order_depends_target_CPPStudy
+  DEP_FILE = CMakeFiles\CPPStudy.dir\part2\LinkList.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CPPStudy.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPPStudy.dir\part2
 
 
 # =============================================================================
@@ -63,7 +69,7 @@ build CMakeFiles/CPPStudy.dir/part1/main.cpp.obj: CXX_COMPILER__CPPStudy_unscann
 #############################################
 # Link the executable CPPStudy.exe
 
-build CPPStudy.exe: CXX_EXECUTABLE_LINKER__CPPStudy_Debug CMakeFiles/CPPStudy.dir/part1/main.cpp.obj
+build CPPStudy.exe: CXX_EXECUTABLE_LINKER__CPPStudy_Debug CMakeFiles/CPPStudy.dir/part1/SqList.cpp.obj CMakeFiles/CPPStudy.dir/part2/LinkList.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPPStudy.dir

@@ -3,4 +3,6 @@ project(CPPStudy)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(CPPStudy part1/main.cpp)
+add_executable(CPPStudy part1/SqList.cpp
+        part2/LinkList.cpp
+)
